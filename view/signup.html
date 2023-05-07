@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Sign In</title>
+</head>
+
+<body>
+
+    <!-----------------------------------NAVBAR---------------------------------->
+    <nav>
+        <div class="nav-left">
+          <a style="padding: 0px;" href="./index.html"><img id="logo" src="./images/Project-Logo.jpg" alt="ProjectLogo"></a>
+          <div class="search-bar">
+            <input type="text" placeholder="What is in your mind today?">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+        <div class="nav-right">
+          <a href="#"><i class="fa fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa fa-question-circle"></i></a>
+          <a href="#"><i class="fa fa-heart"></i></a>
+          <a href="#"><i class="fa fa-user"></i></a>
+          <a href="" style="font-size: 15px; color: black; text-decoration: underline;">Login / SignUp</a>
+        </div>
+    </nav>
+
+  <!-----------------------------------MEGA MENU---------------------------------->
+  <div class="navbar">
+
+</div><br>
+
+
+<!-- -----------------------------Login Signup-------------------------------- -->
+
+    <div class="container">
+        <div class="signin-signup">
+<!------------------------------------LOGIN Form-------------------------------- -->
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="passwordL" placeholder="Password" required>
+                </div>
+                <input type="button" id="login" value="Login" class="btn">
+                
+                <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
+            </form>
+
+
+<!------------------------------------SIGN-UP Form-------------------------------- -->
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="emailS" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                </div>
+                
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" placeholder="Password" minlength="6" required>
+                </div>
+                
+                <div class="input-field">
+                  <i class="fas fa-mars"></i>
+                  <select id="gender" id="gender" name="gender" required>
+                    <option value=""></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+              </div>
+              
+                <div class="input-field">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="number" placeholder="Age" id="age" required min="18">
+                </div>
+                
+                <div class="input-field">
+                    <i class="fas fa-city"></i>
+                    <input type="text" id="city" placeholder="City" required>
+                </div>
+              
+                <input type="button" id="signup" value="Sign up" class="btn">
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2">Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Already registered to ShopUnique?</h3>
+                    <p>Sign into your existing account</p>
+                    <button class="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <!-- <img src="signin.svg" alt="" class="image"> -->
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New to ShopUnique?</h3>
+                    <p>Create your new account by Sign Up!!</p>
+                    <button class="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <!-- <img src="signup.svg" alt="" class="image"> -->
+            </div>
+        </div>
+    </div><br>
+    
+    <script src="./scripts/signup.js"></script>
+</body>
+
+</html>
