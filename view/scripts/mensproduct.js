@@ -21,7 +21,7 @@ pageArr.forEach(el=>{
 })
 
 function fetched(pageNumber){
-    fetch(`http://localhost:4500/products/page/${pageNumber}`)
+    fetch(`https://crowded-trunks-clam.cyclic.app/page/${pageNumber}`)
         .then((res)=>res.json())
         .then(res=>{
             // console.log(res.products)
@@ -350,7 +350,7 @@ if(user!=""){
 // })
 // async function fetchandRenderUsers(pageNumber=1){
 //   try{
-//     let res = await fetch(`http://localhost:4500/products/page/${pageNumber}`)
+//     let res = await fetch(`https://crowded-trunks-clam.cyclic.app/page/${pageNumber}`)
 //     let data = await res.json()
 //     let totalUsers = res.headers.get("X-Total-Count")
 //     console.log(totalUsers)

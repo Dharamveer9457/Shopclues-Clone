@@ -54,7 +54,7 @@ function signUP(){
   if(username=="" || email=="" || password=="" || gender=="" || age=="" || city==""){
     alert("Fill all the details")
   }else{
-  fetch("http://localhost:4500/users/register",{
+  fetch("https://crowded-trunks-clam.cyclic.app/users/register",{
       method:"POST",
       headers:{
           "Content-type":"application/json"
@@ -92,7 +92,7 @@ function signIN(){
   if(payload.email=="admin@gmail.com" && payload.password=="admin"){
     window.location.href = "admin.html"
   }else{
-    fetch("http://localhost:4500/users/login",{
+    fetch("https://crowded-trunks-clam.cyclic.app/users/login",{
         method:"POST",
         body: JSON.stringify(payload),
         headers:{
