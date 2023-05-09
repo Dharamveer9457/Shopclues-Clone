@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+#thankyou{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #thankyou>img{
+    width: 40%;
+    margin-bottom: 20px;
+    border: 1px solid rgb(196, 195, 195);
+    }
+
+a {
+	text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+} 

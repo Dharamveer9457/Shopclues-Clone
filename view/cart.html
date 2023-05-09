@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Cart</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class="nav-right">
-          <a id="carticon" href="#"><i class="fa fa-shopping-cart"></i></a>
+          <!-- <a id="carticon" href="#"><i class="fa fa-shopping-cart"></i></a> -->
           <a href="#"><i class="fa fa-question-circle"></i></a>
           <a href="#"><i class="fa fa-heart"></i></a>
           <a id="usericon" href="#"><i class="fa fa-user"></i></a>
@@ -474,474 +474,112 @@
   </div>
 </div><br>
 
-  <!-----------------------------------Small Navbar---------------------------------->
 
+<!------------------------------------CART BOX----------------------------------->
 
-  <!-----------------------------------SlideShow---------------------------------->
+<h1 style="margin-left:3%;font-family: 'Courgette', cursive ; font-size: 30px;color: rgb(227, 137, 11);margin-top: 110px;"><u>Cart Items</u></h1>
+<div id="cartcontainer">
+  <!-- <h3 style="margin-left:30%;font-family: 'Courgette', cursive ; font-size: 30px;color: rgb(227, 137, 11);"><u>Cart Items</u></h3> -->
+<div id="cartitem"></div>
+<div id="carttotal">
+  <h2 style="font-family: 'Secular One', sans-serif;margin-left:15px"><u>Cart Details</u></h2>
+  <h3 style="color:rgb(31, 13, 230);font-family: 'DM Sans', sans-serif;">Cart Items &nbsp;:&nbsp;<span id="items">0</span>&nbsp;Items</h3>
+  <h3 style="color:green; font-family: 'DM Sans', sans-serif;">Congrats🎉, You have saved ₹<span id="saved">0</span>&nbsp;in total.</h3><br>
+  <h3 style="font-family: 'DM Sans', sans-serif;">Cart Total........................................................₹<span id="totalamount">0</span>&nbsp;/-</h3>
+  <h3 style="font-family: 'DM Sans', sans-serif;">Delivery Charge...............................................₹<span id="deliverycharge">0</span>&nbsp;/-</h3><p id="p"></p><hr>
+  <h3 style="color:green ; font-size:30px" id="payableamount">Payable Amount&nbsp;:&emsp;&nbsp;₹<span id="totalamount">0</span>&nbsp;/-</h3><hr><br>
 
-  <div id="twobox">
-    <div id="parent">
-      <div id="slideshow">
-        <!-- Slideshow Img here -->
-      </div>
-      <div id="links">
-        <a href="">Jaw Dropping Deals</a>
-        <a href="">Refurbished Mobiles</a>
-        <a href="">Men's Clothing</a>
-        <a href="">Nirlon</a>
-        <a href="">Intel</a>
-      </div>
-    </div>
-    <div id="threebox">
-      <div>
-        <img src="https://cdn.shopclues.com/images/banners/2023/Apr/14/2Platinum_Srushty_14April23.jpg" alt="">
-      </div><hr>
-      <div>
-        <img src="https://cdn.shopclues.com/images/banners/2023/Apr/14/1Platinum_Srushty_14April23.jpg" alt="">
-      </div><hr>
-      <div>
-        <img src="https://cdn.shopclues.com/images/banners/2023/Apr/14/3Platinum_Srushty_14April23.jpg" alt="">
-      </div>
-    </div>
-  </div><br>
+  <h2 style="font-family: 'Secular One', sans-serif;margin-left:15px; color:black"><u>Shipping Details</u></h2><br>
+  <form>
+    <p id="contact"><u>Contact Details</u></p>
+    <input id="name" value="" placeholder="Name*">
+    <input id="mobile" value="" placeholder="Mobile Number*">
+    <p id="address"><u>Address Details</u></p>
+    <input id="house" value="" placeholder="House no./Flat no./Apartment No.*">
+    <input id="town" value="" placeholder="Locality/Town*">
+    <input id="city" value="" placeholder="City/District*">
+    <input id="landmark" value="" placeholder="Landmark*">
+    <input id="pin" value="" placeholder="Pincode*">
+    <button id="placeorder">Place Order</button><br><br>
+  </form>
 
-  <!-----------------------------------DealsOfTheDay---------------------------------->
-  
-  <h2 style="margin-left: 20px;">Deals of the Day</h2>
-  <div id="deals">
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/99370/200/200/145508146-99370521-1668508420.jpg" alt="">
-      <p>i7s TWS Twins Wireless</p>
-      <p>₹199 <s>₹2999</s></p>
-      <p>93% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116776/200/200/153261792-116776449-1670501239.jpg" alt="">
-      <p>Woakers</p>
-      <p>₹649 <s>₹3299</s></p>
-      <p>80% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116980/200/200/153323501-116980797-1678944373.jpg" alt="">
-      <p>Hana & Morris Red Shirt</p>
-      <p>₹479 <s>₹1500</s></p>
-      <p>68% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116615/200/200/153169251-116615525-1668259369.jpg" alt="">
-      <p>Angel Craft Sports Shoes</p>
-      <p>₹549 <s>₹999</s></p>
-      <p>45% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116338/200/200/153074088-116338818-1654683296.jpg" alt="">
-      <p>ASE TWS Powerbuds</p>
-      <p>₹489 <s>₹1999</s></p>
-      <p>76% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116588/200/200/153160305-116588548-1662375960.jpg" alt="">
-      <p>Trueware Freshy Containers</p>
-      <p>₹489 <s>₹540</s></p>
-      <p>8% off</p>
-    </div>
-  </div><br>
+</div>
 
-
-   <!-----------------------------------Your Gadegets---------------------------------->
-  
-   <h2 style="margin-left: 20px;">Your Gadgets Store</h2>
-  <div id="deals">
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116805/200/200/153268880-116805429-1671089587.jpg" alt="">
-      <p>AXL AHP-Red Wired Headset</p>
-      <p>₹449 <s>₹1299</s></p>
-      <p>65% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/100740/200/200/146388171-100740822-1675171070.jpg" alt="">
-      <p>Nokia 1600(Refurbished)</p>
-      <p>₹1049 <s>₹2299</s></p>
-      <p>54% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116797/200/200/153266451-116797598-1670661206.jpg" alt="">
-      <p>Wireless M10 Buds</p>
-      <p>₹699 <s>₹1900</s></p>
-      <p>65% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/111981/200/200/151421606-111981882-1668507505.jpg" alt="">
-      <p>P47 Wireless Headphone</p>
-      <p>₹329 <s>₹999</s></p>
-      <p>67% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116805/200/200/153268878-116805417-1671089567.jpg" alt="">
-      <p>AXL BT Neck-Band</p>
-      <p>₹749 <s>₹1599</s></p>
-      <p>53% off</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/116535/200/200/153144782-116535470-1672225743.jpg" alt="">
-      <p>9 Watt LED Bulb (combo)</p>
-      <p>₹419 <s>₹519</s></p>
-      <p>19% off</p>
-    </div>
-  </div><br>
-
-
-<!-----------------------------------Daily Essentials---------------------------------->
-  
-  <h2 style="margin-left: 20px;">Daily Essentials</h2>
-  <div id="daily">
-    <div>
-      <img style="width:50%" src="https://cdn.shopclues.com/images1/thumbnails/105589/280/1/149278210-105589660-1585251645.jpg" alt="">
-      <p>Cooking Essentials</p>
-      <p>Starting at Rs.49</p>
-    </div>
-    <div>
-      <img style="width:30%" src="https://cdn.shopclues.com/images1/thumbnails/105589/320/1/149278289-105589933-1585251885.jpg" alt="">
-      <p>Skin, Hair & Body</p>
-      <p>Starting at Rs.99</p>
-    </div>
-    <div>
-      <img style="width:50%" src="https://cdn.shopclues.com/images1/thumbnails/104441/280/1/148788228-104441348-1578472379.jpg" alt="">
-      <p>Kitchen Essentials</p>
-      <p>Starting at Rs.49</p>
-    </div>
-    <div>
-      <img style="width:60%" src="https://cdn.shopclues.com/images1/thumbnails/105520/280/1/149254102-105520442-1584863770.jpg" alt="">
-      <p>Mask, Sanitizers & More</p>
-      <p>Starting at Rs.49</p>
-    </div>
-    <div>
-      <img style="width:60%" src="https://cdn.shopclues.com/images/thumbnails/42332/280/1/966030079473255231PUTPaCZnL146606056314665883171470319810.jpg" alt="">
-      <p>Cleaning & Dusting Supplies</p>
-      <p>Starting at Rs.109</p>
-    </div>
-    <div>
-      <img src="https://cdn.shopclues.com/images1/thumbnails/105577/320/320/149274414-105577366-1585235325.jpg" alt="">
-      <p>Laundry Detergents</p>
-      <p>Starting at Rs.49</p>
-    </div>
-  </div><br>
-
-<!-----------------------------------Festive Specials---------------------------------->
-  
-   <h2 style="margin-left: 20px;">Daily Essentials</h2>
-   <div id="daily">
-     <div>
-       <img src="https://cdn.shopclues.com/images/thumbnails/88912/320/320/131487154GOLDENPEACOCK1512550255.jpg" alt="">
-       <p>Women's Ethnic Wear</p>
-       <p>Upto 80% off</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images/detailed/41945/HandloomPinkKurta1_1469600960.jpg" alt="">
-       <p>Men's Ethnic Wear</p>
-       <p>Min 40% off</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images/detailed/85345/129033198_Untitled1copy_1506507048.jpg" alt="">
-       <p>Ethnic Footwear</p>
-       <p>Upto 80% off</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images/thumbnails/48680/320/320/61SUwF0UAAL1480795166.jpg" alt="">
-       <p>Wooden Temples</p>
-       <p>Upto 60% off</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images/thumbnails/67262/320/320/IMAES9GDZV3NPG8M1491081901.jpg" alt="">
-       <p>Pooja Essentials</p>
-       <p>Upto 70% off</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images/thumbnails/84338/320/320/128352190Ganesh1505896312.jpg" alt="">
-       <p>Wall Decor</p>
-       <p>Min 60% off</p>
-     </div>
-   </div><br>
-
-<!-----------------------------------Trending Fashion---------------------------------->
-
-<h2 style="margin-left: 20px;">Deals of the Day</h2>
-<div id="deals">
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/111302/200/200/151175444-111302416-1665752917.jpg" alt="">
-    <p>Vivient Women Jump Suit</p>
-    <p>₹369 <s>₹1599</s></p>
-    <p>77% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/59427/200/200/121025856-59427391-1664649251.jpg" alt="">
-    <p>Bhuwal Embroidered Saree</p>
-    <p>₹399 <s>₹1399</s></p>
-    <p>71% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/115808/200/200/152878340-115808533-1668506624.jpg" alt="">
-    <p>Y Green Men Wallet</p>
-    <p>₹119 <s>₹799</s></p>
-    <p>85% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/109203/200/200/150594079-109203126-1662586835.jpg" alt="">
-    <p>Prijam Men's Kurta</p>
-    <p>₹679 <s>₹1599</s></p>
-    <p>58% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/116632/200/200/153174155-116632236-1664949974.jpg" alt="">
-    <p>Gradient UV Goggles</p>
-    <p>₹139 <s>₹499</s></p>
-    <p>72% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/84155/200/200/136729574-84155235-1660931981.jpg" alt="">
-    <p>Raabta Navy Blue Skirt</p>
-    <p>₹479 <s>₹1299</s></p>
-    <p>63% off</p>
-  </div>
-</div><br>
-  
-<!-----------------------------------Budget Bazar--------------------------------------->
-
-<h2 style="margin-left: 20px;">Budget Bazaar</h2>
-<div id="budget">
-  <div>
-    <img src="https://cdn.shopclues.com/images/banners/PricePont_akb_1Oct21_W_01.jpg" alt="">
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images/banners/PricePont_akb_1Oct21_W_02.jpg" alt="">
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images/banners/PricePont_akb_1Oct21_W_03.jpg" alt="">
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images/banners/PricePont_akb_1Oct21_W_04.jpg" alt="">
-  </div>
-</div><br>
-
-<div id="budget1">
-      <div>
-        <img src="https://cdn.shopclues.com/images/banners/goldbanner_Beauty_3rdJune_PR.jpg" alt="">
-      </div>
-      <div>
-        <img src="https://cdn.shopclues.com/images/banners/Diet&Nutrition_ColorGold_3rdJune_PR.jpg" alt="">
-      </div>
-      <div>
-        <img src="https://cdn.shopclues.com/images/banners/goldbanner_WaterBottles_3rdJune_PR.jpg" alt="">
-      </div>
-</div><br>
-  
-
-<!-----------------------------------Sports & Health---------------------------------->
-
-<h2 style="margin-left: 20px;">Sports & Health</h2>
-   <div id="daily">
-     <div>
-       <img src="https://cdn.shopclues.com/images1/thumbnails/108803/280/1/150436700-108803780-1596188707.jpg" alt="">
-       <p>Medical Equipment</p>
-       <p>Upto 80% off</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images1/thumbnails/104507/280/1/148819339-104507472-1579085071.jpg" alt="">
-       <p>Fitness Bands</p>
-       <p>Upto 80% off</p>
-     </div>
-     <div>
-       <img style="width:30%" src="https://cdn.shopclues.com/images/thumbnails/27595/280/1/11448611056.jpg" alt="">
-       <p>Bottle & Shakers</p>
-       <p>Upto 80% off</p>
-     </div>
-     <div>
-       <img style="width:50%" src="https://cdn.shopclues.com/images1/thumbnails/103419/280/1/148130677-103419160-1571212818.jpg" alt="">
-       <p>Nutrition & Supplements</p>
-       <p>Upto 80% off</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images1/thumbnails/95250/280/1/142772233-95250978-1544273464.jpg" alt="">
-       <p>Skipping Ropes</p>
-       <p>Starting @ 199</p>
-     </div>
-     <div>
-       <img src="https://cdn.shopclues.com/images1/thumbnails/107160/280/1/149847355-107160132-1590790597.jpg" alt="">
-       <p>Yoga Mats</p>
-       <p>Upto 80% off</p>
-     </div>
-   </div><br>
-
-
-<!-----------------------------------Brand Store---------------------------------->
-
-<h2 style="margin-left: 20px;">Brand Store</h2>
-   <div id="daily">
-     <div>
-       <img style="width:50%" src="https://cdn.shopclues.com/images1/thumbnails/104122/280/1/148627878-104122294-1577180435.jpg" alt="">
-       <p>Khadi</p>
-       <p>Starting @ 69</p>
-     </div>
-     <div>
-       <img style="width:40%" src="https://cdn.shopclues.com/images1/thumbnails/109822/280/1/150760050-109822495-1600850631.jpg" alt="">
-       <p>Redmi</p>
-       <p>Save Upto Rs.5000</p>
-     </div>
-     <div>
-       <img style="width:60%" src="https://cdn.shopclues.com/images/thumbnails/34620/280/1/902417708981309282209372miltonwaterbottleset1434449243144186494711454507692145672090914577949341459228900.jpg" alt="">
-       <p>Milton</p>
-       <p>Upto 60% off</p>
-     </div>
-     <div>
-       <img style="width:40%" src="https://cdn.shopclues.com/images1/thumbnails/109013/280/1/150523151-109013699-1603186269.jpg" alt="">
-       <p>Realme</p>
-       <p>Save Upto Rs.5000</p>
-     </div>
-     <div>
-       <img style="width:40%" src="https://cdn.shopclues.com/images1/thumbnails/109124/280/1/150563834-109124498-1600113360.jpg" alt="">
-       <p>Vivo</p>
-       <p>Save Upto Rs.5000</p>
-     </div>
-     <div>
-       <img style="width:70%" src="https://cdn.shopclues.com/images1/thumbnails/108804/280/1/150437204-108804736-1602946705.jpg" alt="">
-       <p>Philips</p>
-       <p>Upto 40% off</p>
-     </div>
-   </div><br>
-
-
-<!-----------------------------------Branded Deals---------------------------------->
-
-<h2 style="margin-left: 20px;">Branded Deals</h2>
-<div id="deals">
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/101449/200/200/146972107-101449020-1664652884.jpg" alt="">
-    <p>Ivy Vacker Sunglasses</p>
-    <p>₹259 <s>₹1499</s></p>
-    <p>83% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/115808/200/200/152878340-115808533-1668506624.jpg" alt="">
-    <p>BMW Men's Wallet</p>
-    <p>₹199 <s>₹799</s></p>
-    <p>85% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/81476/200/200/135627858-81476269-1665754103.jpg" alt="">
-    <p>MTR MT310 Dual-Sim Phone</p>
-    <p>₹779 <s>₹999</s></p>
-    <p>22% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/45487/200/200/116636483-45487609-1671186820.jpg" alt="">
-    <p>Neoprene Bike Mask</p>
-    <p>₹139 <s>₹399</s></p>
-    <p>65% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/104239/200/200/148699700-104239236-1668507832.jpg" alt="">
-    <p>Pause Men High Neck</p>
-    <p>₹399 <s>₹1099</s></p>
-    <p>64% off</p>
-  </div>
-  <div>
-    <img src="https://cdn.shopclues.com/images1/thumbnails/114621/200/200/152497670-114621560-1625832145.jpg" alt="">
-    <p>Singularity White Shirt</p>
-    <p>₹399 <s>₹899</s></p>
-    <p>56% off</p>
-  </div>
-</div><br>
-
-
-<hr><div id="band">
-  <div>
-    <img src="./images/great-selection.png" alt="">
-    <p>Great Selection</p>
-  </div>
-  <div>
-    <img src="./images/low-price.png" alt="">
-    <p>Low Price</p>
-  </div>
-  <div style="border-right: 0;">
-    <img src="./images/speedy-delivery.png" alt="">
-    <p>Speedy Delivery</p>
-  </div>
-</div><hr><br>
-
+</div><br><hr>
 
 <!------------------------------------FOOTER--------------------------------->
 
 <div id="footer">
-  <div>
-    <h4>Shopper Central</h4>
-    <a href="">Easy Returns & Replacements</a>
-    <a href="">Our Policies</a>
-    <a href="">CluesBucks</a>
-    <a href="">Payment Options</a>
-    <a href="">ShopUnique Surety</a>
-    <a href="">FAQs (Help)</a>
-    <a href="">Service Centers</a>
-    <a href="">User Agreement</a>
+    <div>
+      <h4>Shopper Central</h4>
+      <a href="">Easy Returns & Replacements</a>
+      <a href="">Our Policies</a>
+      <a href="">CluesBucks</a>
+      <a href="">Payment Options</a>
+      <a href="">ShopUnique Surety</a>
+      <a href="">FAQs (Help)</a>
+      <a href="">Service Centers</a>
+      <a href="">User Agreement</a>
+    </div>
+    <div>
+      <h4>Merchant Central</h4>
+      <a href="">Merchant Panel</a>
+      <a href="">How to Sell</a>
+      <a href="">Commission Structure</a>
+      <a href="">Fullfillment Policy</a>
+      <a href="">Merchant Blog</a>
+      <a href="">Policies & Rules</a>
+      <a href="">User Agreement</a>
+      <a href="">Seller Summit</a>
+      <a href="">Developer Resources</a>
+    </div>
+    <div>
+      <h4>About Us</h4>
+      <a href="">History</a>
+      <a href="">Band of Trust</a>
+      <a href="">In the News</a>
+      <a href="">Awards</a>
+      <a href="">Careers</a>
+      <a href="">Blog</a>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <a href="">Merchant Support</a>
+      <a href="">Bulk Orders</a>
+      <a href="">Press</a>
+    </div>
+    <div>
+      <h4>Press</h4>
+      <a href="">In the News</a>
+    </div>
   </div>
-  <div>
-    <h4>Merchant Central</h4>
-    <a href="">Merchant Panel</a>
-    <a href="">How to Sell</a>
-    <a href="">Commission Structure</a>
-    <a href="">Fullfillment Policy</a>
-    <a href="">Merchant Blog</a>
-    <a href="">Policies & Rules</a>
-    <a href="">User Agreement</a>
-    <a href="">Seller Summit</a>
-    <a href="">Developer Resources</a>
+  
+  <div id="social">
+    <div>
+      <h4>Keep In Touch</h4>
+      <a href="https://twitter.com/shopclues"><i style="margin-left: 0;" class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/ShopClues/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCnxPAa_6EL5ggl0_FRq6Zjw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/shopclues/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/company/shopclues/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/110218897457374040465/posts"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+    <div>
+      <h4>100% Secure and Trusted Payment</h4>
+      <img src="https://images.shopclues.com/images/ui/pgateway_dkt@2x.png" alt="">
+    </div>
   </div>
-  <div>
-    <h4>About Us</h4>
-    <a href="">History</a>
-    <a href="">Band of Trust</a>
-    <a href="">In the News</a>
-    <a href="">Awards</a>
-    <a href="">Careers</a>
-    <a href="">Blog</a>
+  
+  <div id="lastline">
+    <p>Terms of Use | Privacy Policy | Security Bug Report | States Privacy Right | Do Not sell or Share My Personal Information | 
+      Transperancy in Supply Chains | Targeted Ad Preferences | Limit the Use of My Sensitive Personal Information | Wall of Fame</p>
+    <p style="font-weight:bold">Copyright © 2011-2023 Clues Network Pvt. Ltd.</p>
   </div>
-  <div>
-    <h4>Contact Us</h4>
-    <a href="">Merchant Support</a>
-    <a href="">Bulk Orders</a>
-    <a href="">Press</a>
-  </div>
-  <div>
-    <h4>Press</h4>
-    <a href="">In the News</a>
-  </div>
-</div>
-
-<div id="social">
-  <div>
-    <h4>Keep In Touch</h4>
-    <a href="https://twitter.com/shopclues"><i style="margin-left: 0;" class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/ShopClues/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    <a href="https://www.youtube.com/channel/UCnxPAa_6EL5ggl0_FRq6Zjw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-    <a href="https://www.pinterest.com/shopclues/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/company/shopclues/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-    <a href="https://plus.google.com/110218897457374040465/posts"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-  </div>
-  <div>
-    <h4>100% Secure and Trusted Payment</h4>
-    <img src="https://images.shopclues.com/images/ui/pgateway_dkt@2x.png" alt="">
-  </div>
-</div>
-
-<div id="lastline">
-  <p>Terms of Use | Privacy Policy | Security Bug Report | States Privacy Right | Do Not sell or Share My Personal Information | 
-    Transperancy in Supply Chains | Targeted Ad Preferences | Limit the Use of My Sensitive Personal Information | Wall of Fame</p>
-  <p style="font-weight:bold">Copyright © 2011-2023 Clues Network Pvt. Ltd.</p>
-</div>
-
-
-
-
-
-    <script src="./scripts/index.js"></script>
-</body>
-</html>
+  
+  
+  
+  
+  
+      <script src="./scripts/cart.js"></script>
+  </body>
+  </html>

@@ -1,3 +1,4 @@
+
 body{
     margin:0;
     padding: 0;
@@ -219,210 +220,163 @@ nav {
  #ad>div:nth-child(2)>img{
     margin-left: 7%;
  }
+   
+
+
+ /*----------------------------------MAIN DIV--------------------------------------------  */
+
+ #locate{
+    margin-top: 110px;
+    padding: 10px;
+    align-items: center;
+  }
+
+  #locate a{
+    color: #888888;
+  }
+
+  #locate a:hover{
+    font-weight: bold;
+  }
+
+ #main{
+    display: flex;
+    width: 99%;
+    gap: 1%;
+    margin: auto;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+  }
+
+  #images{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid rgb(226, 226, 226);
+  }
+
+  #Pdetails{
+    width: 55%;
+    padding-left: 2%;
+    border: 1px solid rgb(226, 226, 226);
+    line-height: 20px;
+  }
+
+  #Pdetails>div>:nth-child(4){
+    color: rgb(237, 171, 18);
+    font-size: 25px;
+  }
+
+  #Pdetails>div>:nth-child(5){
+    color:  rgb(0, 0, 0);
+    display: inline;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+
+  #Pdetails>div:nth-child(6){
+    color: #c9c9c9;
+  }
+
+  #Pdetails>div>:nth-child(7){
+    color: #24a3b5;
+    font-weight: bold;
+    display: inline;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+
+  #big_img{
+    width: 50%;
+    margin: auto;
+  }
+
+  #big_img>img{
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+
+  #small_img{
+    margin: auto;
+    margin-top: 1%;
+    width: 50%;
+    display: flex;
+  }
+
+  #small_img img{
+    width:28%;
+    margin-left:5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 5px;
+  }
+
+  #genCol>ul>li{
+    margin: auto;
+    color: #777777;
+  }
+
+  .features {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-
- /* <!-----------------------------------SlideShow----------------------------------> */
-
- #twobox{
-  margin: auto;
-  margin-top: 8%;
-  display: flex;
-  width: 97%;
-  gap:1px;
- }
-
-
- #parent{
-  width: 85%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
- }
-
- #slideshow>img{
-  width: 100%;
+  .feature {
+    display: flex;
+    align-items: center;
+  }
   
- }
+  .feature ion-icon {
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 10px;
+    color: #24a3b5;
+  }
+  
+  .feature p{
+    font-size: 15px;
+  }
 
- #links{
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-  align-items: center;
- }
+  #addtocart{
+    width: 60%;
+  }
 
- #links>a{
-  text-decoration: none;
-  color: rgb(120, 120, 120);
- }
+  #addtocart>button{
+    height: 50px;
+    width: 40%;
+    margin-left: 5px;
+    cursor: pointer;
+  }
 
- #links>a:hover{
-  color: #24a3b5;
-  font-weight: bold;
- }
+  #addtocart>button:nth-child(1){
+    background-color: white;
+    border: 2px solid #ff884f;
+    border-radius: 2px;
+    color: orange;
+    font-size: 18px;
+  }
 
- #threebox{
-  width: 13%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
- }
+  #addtocart>button:nth-child(2){
+    background-color: 
+    #ff884f;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+  }
 
- #threebox>div>img{
-  width: 100%;
-  cursor: pointer;
-}
+  #addtocart>button:nth-child(2):hover{
+    font-weight: bold;
+  }
 
-#threebox>div>img:hover{
-  opacity: 0.5;
-}
-
-
-/* <!-----------------------------------DealsOfTheDay----------------------------------> */
-
-#deals{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#deals>div{
-  width:14%;
-  text-align: center;
-  margin: auto;
-  line-height: 12px;
-  padding: 20px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-#deals img{
-  width: 70%;
-  transition: transform 0.5s ease;
-}
-
-#deals img:hover{
-  transform: scale(1.1);
-}
-
-#deals>div:hover{
-  border: 1px solid #24a3b5;
-}
-
-#deals>div>:nth-child(2){
-  color:  rgb(100, 100, 100);
-}
-
-#deals s{
-  color:  rgb(100, 100, 100);
-  font-weight: normal;
-}
-
-#deals>div>:nth-child(3){
-  color:  rgb(0, 0, 0);
-  display: inline;
-  font-weight: bold;
-}
-
-#deals>div>:nth-child(4){
-  color: #24a3b5;
-  font-weight: bold;
-  display: inline;
-}
+  #addtocart>button:nth-child(1):hover{
+    font-weight: bold;
+  }
 
 
-/*<!-----------------------------------Daily Essentials---------------------------------->*/
-
-#daily{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#daily>div{
-  width:14%;
-  text-align: center;
-  margin: auto;
-  line-height: 15px;
-  padding: 20px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-#daily img{
-  width: 80%;
-  height: 150px;
-  transition: transform 0.5s ease;
-}
-
-#daily img:hover{
-  transform: scale(1.1);
-}
-
-#daily>div:hover{
-  border: 1px solid #24a3b5;
-}
-
-
-#daily>div>:nth-child(2){
-  color:  rgb(100, 100, 100);
-}
-
-#daily>div>:nth-child(3){
-  color: #000000;
-  font-weight: bold;
-}
-
-
-/* <!-----------------------------------Budget Bazar----------------------------------> */
-
-#budget{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#budget img:hover{
-  width: 100%;
-  text-align: center;
-}
-
-#budget1{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#budget1>div{
-  width:33.3;
-}
-
-#budget1>div>img{
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-#budget1>div>img:hover{
- opacity: 0.5;
-}
-
-#band{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-#band>div{
-  width: 33.33%;
-  text-align: center;
-  color: #797979;
-  border-right: 1px solid rgb(173, 173, 173);
-}
-
-
-/* <!------------------------------------FOOTER--------------------------------->*/
+  /* <!------------------------------------FOOTER--------------------------------->*/
 
 #footer{
   display: flex;
@@ -481,4 +435,5 @@ nav {
   line-height: 25px;
   padding-bottom:2px;
 }
+
 

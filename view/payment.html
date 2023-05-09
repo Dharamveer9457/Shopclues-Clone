@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/payment.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <title>Payment Gateway</title>
+</head>
+
+<body>
+
+    <!-----------------------------------NAVBAR---------------------------------->
+    <nav>
+        <div class="nav-left">
+          <a style="padding: 0px;" href="./index.html"><img id="logo" src="./images/Project-Logo.jpg" alt="ProjectLogo"></a>
+          <div class="search-bar">
+            <!-- <input type="text" placeholder="What is in your mind today?"> -->
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+          </div>
+        </div>
+        <div class="nav-right">
+            <a id="carticon" href="#"><i class="fa fa-shopping-cart"></i></a>
+            <a href="#"><i class="fa fa-question-circle"></i></a>
+            <a href="#"><i class="fa fa-heart"></i></a>
+            <a id="usericon" href="#"><i class="fa fa-user"></i></a>
+            <a href="./signup.html" id="loginlink" class="toggle" style="font-size: 15px; color: black; text-decoration: underline;"><p id="username" style="display: inline;">Login / SignUp</p></a>
+          </div>
+    </nav>
+
+  <!-----------------------------------MEGA MENU---------------------------------->
+  <div class="navbar">
+
+</div><br>
+
+<!-----------------------------------------MAIN----------------------------------->
+<h1 style="text-align: center;font-family: 'Courgette', cursive"><u>Payment Option</u></h1>
+
+    <div id="paymentmode">
+        
+        <input type="radio" value="COD" id="cod" unchecked><b style="font-size: 20px;">Cash On Delivery</b>
+        <input type="radio" value="CP" id="cp" unchecked><b style="font-size: 20px;">Card Payment</b>
+        <h2 style="text-align: center; color: rgb(187, 44, 44);">Total Amount to pay:- ₹<span>1999</span></h2>
+        <form>
+            
+            <input type="text" placeholder="Name on Card" id="name" />
+            <input type="number" pattern="\d{12}" placeholder="Card Number" id="cardNo" required />
+            <input type="number" pattern="\d{12}" placeholder="CVV" id="cardCvv" required />
+            <button id="submit">Confirm</button>
+            <!-- <input type="number" placeholder="OTP" id="otp"/> -->
+            <!-- <button id="orderplaced">PLACE ORDER</button> -->
+        </form>
+
+    </div><br><hr>
+
+
+<!------------------------------------FOOTER--------------------------------->
+
+<div id="footer">
+    <div>
+      <h4>Shopper Central</h4>
+      <a href="">Easy Returns & Replacements</a>
+      <a href="">Our Policies</a>
+      <a href="">CluesBucks</a>
+      <a href="">Payment Options</a>
+      <a href="">ShopUnique Surety</a>
+      <a href="">FAQs (Help)</a>
+      <a href="">Service Centers</a>
+      <a href="">User Agreement</a>
+    </div>
+    <div>
+      <h4>Merchant Central</h4>
+      <a href="">Merchant Panel</a>
+      <a href="">How to Sell</a>
+      <a href="">Commission Structure</a>
+      <a href="">Fullfillment Policy</a>
+      <a href="">Merchant Blog</a>
+      <a href="">Policies & Rules</a>
+      <a href="">User Agreement</a>
+      <a href="">Seller Summit</a>
+      <a href="">Developer Resources</a>
+    </div>
+    <div>
+      <h4>About Us</h4>
+      <a href="">History</a>
+      <a href="">Band of Trust</a>
+      <a href="">In the News</a>
+      <a href="">Awards</a>
+      <a href="">Careers</a>
+      <a href="">Blog</a>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <a href="">Merchant Support</a>
+      <a href="">Bulk Orders</a>
+      <a href="">Press</a>
+    </div>
+    <div>
+      <h4>Press</h4>
+      <a href="">In the News</a>
+    </div>
+  </div>
+  
+  <div id="social">
+    <div>
+      <h4>Keep In Touch</h4>
+      <a href="https://twitter.com/shopclues"><i style="margin-left: 0;" class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/ShopClues/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.youtube.com/channel/UCnxPAa_6EL5ggl0_FRq6Zjw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/shopclues/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/company/shopclues/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="https://plus.google.com/110218897457374040465/posts"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+    </div>
+    <div>
+      <h4>100% Secure and Trusted Payment</h4>
+      <img src="https://images.shopclues.com/images/ui/pgateway_dkt@2x.png" alt="">
+    </div>
+  </div>
+  
+  <div id="lastline">
+    <p>Terms of Use | Privacy Policy | Security Bug Report | States Privacy Right | Do Not sell or Share My Personal Information | 
+      Transperancy in Supply Chains | Targeted Ad Preferences | Limit the Use of My Sensitive Personal Information | Wall of Fame</p>
+    <p style="font-weight:bold">Copyright © 2011-2023 Clues Network Pvt. Ltd.</p>
+  </div>
+  
+  
+  
+  
+  
+      <script src="./scripts/payment.js"></script>
+  </body>
+  </html>

@@ -1,3 +1,5 @@
+
+
 const sign_in_btn = document.querySelector("#sign-in-btn");
 const sign_up_btn = document.querySelector("#sign-up-btn");
 const container = document.querySelector(".container");
@@ -35,8 +37,7 @@ passwordInput.addEventListener('input', function() {
 // --------------------------Sign UP--------------------------------------
 
 let submit = document.getElementById("signup")
-submit.addEventListener("click",(e)=>{
-  e.preventDefault()
+submit.addEventListener("click",()=>{
   signUP()
 })
 
@@ -50,7 +51,9 @@ function signUP(){
       age : document.getElementById("age").value,
       city : document.getElementById("city").value
   }
-
+  if(username=="" || email=="" || password=="" || gender=="" || age=="" || city==""){
+    alert("Fill all the details")
+  }else{
   fetch("http://localhost:4500/users/register",{
       method:"POST",
       headers:{
@@ -59,42 +62,111 @@ function signUP(){
       body: JSON.stringify(payload)
   })
   .then((res)=>res.json())
-  .then(res=>console.log(res))
-  alert("New user has been registered")
-  .catch((err)=>console.log(err))
+  .then(res=>{
+    console.log(res)
+    alert(`${res.msg}`)
+    location.reload()
+  }
+ )
+  .catch((error)=>{
+    return error
+  })
+}
 }
 
 
 //---------------------------------LoGIN--------------------------------------
 
 let login = document.getElementById("login")
-login.addEventListener("click",(e)=>{
+login.addEventListener("click",()=>{
   signIN()
 })
 
 function signIN(){
+
   const payload = {
       email : document.getElementById("email").value,
       password : document.getElementById("passwordL").value
   }
-  fetch("http://localhost:4500/users/login",{
-      method:"POST",
-      body: JSON.stringify(payload),
-      headers:{
-          "Content-type":"application/json",
-      }
-  })
-  .then((res)=>res.json())
-.then(res=>{
-  console.log(res)
-
-  if(res.msg == 'Wrong Credentials'){
-    alert("Wrong Credentials")
+  
+  if(payload.email=="admin@gmail.com" && payload.password=="admin"){
+    window.location.href = "admin.html"
   }else{
-    localStorage.setItem("token",res.token)
-    alert("Login Successfull")
-    window.location.href = "index.html"
-  }
+    fetch("http://localhost:4500/users/login",{
+        method:"POST",
+        body: JSON.stringify(payload),
+        headers:{
+            "Content-type":"application/json",
+        }
+    })
+    .then((res)=>res.json())
+    .then(res=>{
+    console.log(res)
+
+    if(res.msg == 'Wrong Credentials'){
+      alert("Wrong Credentials")
+    }else{
+      localStorage.setItem("token",res.token)
+      localStorage.setItem("username",res.name)
+      localStorage.setItem("userID",res.id)
+
+      alert("Login Successfull")
+      window.location.href = "index.html"
+    }
 })
-.catch((err)=>console.log(err))
+    .catch((error)=>{
+      return error
+    })
+  }
 }
+
+
+// ---------------------------Username in Navbar-------------------------------------
+
+const remove = document.getElementById("usericon")
+let user = localStorage.getItem("username")||""
+let n = document.getElementById("usernamep")
+let link = document.getElementById("loginlink")
+const box = document.querySelector(".nav-right")
+if(user!=""){
+    n.innerHTML = `Hi, ${user}`
+    n.style.color = "green"
+    n.style.fontWeight = "bold"
+    link.href = "javascript:void(0)";
+    box.style.width = "30%"
+    box.removeChild(remove)
+
+    const signout = document.createElement("button")
+    signout.innerHTML = "Sign Out"
+    box.appendChild(signout)
+
+    signout.classList.add("signout")
+
+    signout.addEventListener("click",()=>{
+        localStorage.clear("user")
+        localStorage.clear("token")
+        location.reload()
+    })
+  }
+
+//----------------------------------Common in everypage--------------------------------
+
+let token = localStorage.getItem("token")||""
+
+const usericon = document.getElementById("usericon")
+const carticon = document.getElementById("carticon")
+
+usericon.addEventListener("click",()=>{
+    if(token==""){
+        window.location.href = "signup.html"
+    }
+})
+
+carticon.addEventListener("click",()=>{
+    if(token==""){
+        alert("Please login first")
+        window.location.href = "signup.html"
+    }else{
+        window.location.href = "cart.html"
+    }
+})

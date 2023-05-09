@@ -14,7 +14,23 @@ body {
 }
 
 /* -----------------------------------Header---------------------------------------- */
+  /* ------------------------------------Sign Out button-------------------------------- */
 
+  .signout{
+    background-color: rgb(215, 67, 67);
+    border:none;
+    border-radius: 5px;
+    height: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .signout:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid black;
+  }
 /* ------------------------------------NAVBAR-------------------------------- */
 nav {
     display: flex;
