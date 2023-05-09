@@ -221,264 +221,102 @@ nav {
  }
   
 
- /* <!-----------------------------------SlideShow----------------------------------> */
+  /* ------------------------------------MAIN------------------------------- */
 
- #twobox{
-  margin: auto;
-  margin-top: 8%;
-  display: flex;
-  width: 97%;
-  gap:1px;
- }
+  #paymentmode{
+    width:30%;
+    margin: auto;
+    border: 2px solid rgb(196, 196, 196);
+    padding-top: 15px;
+  }
 
+  form>input{
+    margin-left:20%;
+    margin-right: 20%;
+    width:60%;
+    line-height: 30px;
+    margin-top: 20px;
+    border: 1px solid rgb(194, 190, 190);
+    margin-bottom: 10px;
+  }
+  form>button{
+    width:20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 40px;
+    background-color: #05b102;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
 
- #parent{
-  width: 85%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
- }
-
- #slideshow>img{
-  width: 100%;
-  
- }
-
- #links{
-  display: flex;
-  justify-content: space-around;
-  height: 50px;
-  align-items: center;
- }
-
- #links>a{
-  text-decoration: none;
-  color: rgb(120, 120, 120);
- }
-
- #links>a:hover{
-  color: #24a3b5;
-  font-weight: bold;
- }
-
- #threebox{
-  width: 13%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
- }
-
- #threebox>div>img{
-  width: 100%;
-  cursor: pointer;
-}
-
-#threebox>div>img:hover{
-  opacity: 0.5;
-}
-
-
-/* <!-----------------------------------DealsOfTheDay----------------------------------> */
-
-#deals{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#deals>div{
-  width:14%;
-  text-align: center;
-  margin: auto;
-  line-height: 12px;
-  padding: 20px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-#deals img{
-  width: 70%;
-  transition: transform 0.5s ease;
-}
-
-#deals img:hover{
-  transform: scale(1.1);
-}
-
-#deals>div:hover{
-  border: 1px solid #24a3b5;
-}
-
-#deals>div>:nth-child(2){
-  color:  rgb(100, 100, 100);
-}
-
-#deals s{
-  color:  rgb(100, 100, 100);
-  font-weight: normal;
-}
-
-#deals>div>:nth-child(3){
-  color:  rgb(0, 0, 0);
-  display: inline;
-  font-weight: bold;
-}
-
-#deals>div>:nth-child(4){
-  color: #24a3b5;
-  font-weight: bold;
-  display: inline;
-}
-
-
-/*<!-----------------------------------Daily Essentials---------------------------------->*/
-
-#daily{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#daily>div{
-  width:14%;
-  text-align: center;
-  margin: auto;
-  line-height: 15px;
-  padding: 20px;
-  cursor: pointer;
-  font-size: 15px;
-}
-
-#daily img{
-  width: 80%;
-  height: 150px;
-  transition: transform 0.5s ease;
-}
-
-#daily img:hover{
-  transform: scale(1.1);
-}
-
-#daily>div:hover{
-  border: 1px solid #24a3b5;
-}
-
-
-#daily>div>:nth-child(2){
-  color:  rgb(100, 100, 100);
-}
-
-#daily>div>:nth-child(3){
-  color: #000000;
-  font-weight: bold;
-}
-
-
-/* <!-----------------------------------Budget Bazar----------------------------------> */
-
-#budget{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#budget img:hover{
-  width: 100%;
-  text-align: center;
-}
-
-#budget1{
-  display: flex;
-  width: 97%;
-  margin: auto;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-#budget1>div{
-  width:33.3;
-}
-
-#budget1>div>img{
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-
-#budget1>div>img:hover{
- opacity: 0.5;
-}
-
-#band{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-#band>div{
-  width: 33.33%;
-  text-align: center;
-  color: #797979;
-  border-right: 1px solid rgb(173, 173, 173);
-}
+  #paymentmode>input{
+    margin-left: 40px;
+} 
 
 
 /* <!------------------------------------FOOTER--------------------------------->*/
 
 #footer{
-  display: flex;
-  width: 100%;
-  background-color: #eeeeee;
-  border-top: 1px solid rgb(199, 199, 199);
-  border-bottom: 1px solid rgb(199, 199, 199);
-  padding-bottom: 15px;
-}
-
-#footer>div{
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  margin-left:20px;
-  text-align: left;
-  line-height: 30px;
-}
-
-#footer a{
- text-decoration: none;
- color: #606060;
- font-size: 12px;
-}
-
-#social{
-  width: 100%;
-  display: flex;
-  margin: auto;
-  background-color: #eeeeee;
-  border-bottom: 1px solid rgb(199, 199, 199);
-  padding-bottom: 15px;
-}
-
-#social>div{
-  width: 48%;
-  margin: auto;
-}
-
-#social img{
-  width: 100%;
-}
-
-#social i{
-  font-size: 30px;
-  margin-left: 3%;
-  color: #24a3b5;
-}
-
-#lastline{
-  background-color: #eeeeee;
-  margin:auto;
-  text-align: center;
-  padding-top:2px;
-  font-size: 15px;
-  line-height: 25px;
-  padding-bottom:2px;
-}
-
+    display: flex;
+    width: 100%;
+    background-color: #eeeeee;
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 15px;
+  }
+  
+  #footer>div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-left:20px;
+    text-align: left;
+    line-height: 30px;
+  }
+  
+  #footer a{
+   text-decoration: none;
+   color: #606060;
+   font-size: 12px;
+  }
+  
+  #social{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    background-color: #eeeeee;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 15px;
+  }
+  
+  #social>div{
+    width: 48%;
+    margin: auto;
+  }
+  
+  #social img{
+    width: 100%;
+  }
+  
+  #social i{
+    font-size: 30px;
+    margin-left: 3%;
+    color: #24a3b5;
+  }
+  
+  #lastline{
+    background-color: #eeeeee;
+    margin:auto;
+    text-align: center;
+    padding-top:2px;
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom:2px;
+  }
+  
+  
