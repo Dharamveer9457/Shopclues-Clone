@@ -74,10 +74,10 @@ The project uses the following dependencies:
 * nodemmon
 
 # Deployment
-* Frontend is deployed on Netlify
+* Frontend is deployed on Netlify<br>
  FrontEnd : https://literate-needle-3714.netlify.app/ <br>
 
- * Backend is deployed on Cyclic
+ * Backend is deployed on Cyclic<br>
  Backend : https://jealous-ruby-snapper.cyclic.app/ <br>
 
 # Running the Website
