@@ -95,20 +95,33 @@ var otp;
                     alert("Your OTP is: " + otp);
                 }
                 generateOTP()
-              }
+
                 let orderplace = document.createElement("button")
                 orderplace.textContent = "PLACE ORDER"
 
                 orderplace.addEventListener("click",()=>{
-                    if(checkOTP){
+
+                    function checkOTP() {
+                    // Get the OTP entered by the user
+                    var userInput = prompt("Enter the OTP you received:");
+
+                    // Compare the user input with the generated OTP
+                    if (userInput == otp) {
+                        alert("Order Placed Successfully🎉");
                         window.location.href = "thankyou.html"
-                    }else{
+                    } else {
+                        alert("OTP is incorrect. Please try again.");
                         location.reload()
                     }
+                }
+                checkOTP()
+                
                 })
 
                 form.append(orderplace)
 
+              }
+                
         }else{
             alert("Please select one of the payment method")
         }
@@ -119,17 +132,6 @@ var otp;
 
    
 
-    function checkOTP() {
-        // Get the OTP entered by the user
-        var userInput = prompt("Enter the OTP you received:");
-
-        // Compare the user input with the generated OTP
-        if (userInput == otp) {
-            alert("Order Placed Successfully🎉");
-        } else {
-            alert("OTP is incorrect. Please try again.");
-            location.reload()
-        }
-    }
+    
 
     
