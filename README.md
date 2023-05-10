@@ -17,48 +17,48 @@ Shop Unique is a web application that is designed to mimic the functionality of 
 shop-unique/<br>
 ├── middlewares/<br>
 │   ├── auth.js<br>
-│   │
+│   │<br>
 ├── models/<br>
 │   ├── product.model.js<br>
 │   ├── user.model.js<br>
-│   │
-├── routes/
-│   ├── product.route.js
-│   ├── user.route.js
-├── view/
-│   ├── admin.html
-│   ├── cart.html
-│   ├── index.html
-│   ├── mensProduct.html
-│   ├── payment.html
-│   ├── productDetail.html
-│   ├── signup.html
-│   ├── thankyou.html
-│   │
-│   ├── scripts/
-│   │   ├── admin.js
-│   │   ├── cart.js
-│   │   ├── main.js
-│   │   ├── mensProduct.js
-│   │   ├── payment.js
-│   │   └── productDetails.js
-│   │   └── signup.js
-│   │
-│   ├── styles/
-│   │   ├── admin.css
-│   │   ├── cart.css
-│   │   ├── index.css
-│   │   ├── mensProduct.css
-│   │   ├── payment.css
-│   │   └── productDetails.css
-│   │   └── signup.css
-│   │   └── thankyou.css
-│   │
-├── .gitIgnore
-├── db.js
-├── index.js
-├── package-lock.json
-├── package.json
+│   │<br>
+├── routes/<br>
+│   ├── product.route.js<br>
+│   ├── user.route.js<br>
+├── view/<br>
+│   ├── admin.html<br>
+│   ├── cart.html<br>
+│   ├── index.html<br>
+│   ├── mensProduct.html<br>
+│   ├── payment.html<br>
+│   ├── productDetail.html<br>
+│   ├── signup.html<br>
+│   ├── thankyou.html<br>
+│   │<br>
+│   ├── scripts/<br>
+│   │   ├── admin.js<br>
+│   │   ├── cart.js<br>
+│   │   ├── main.js<br>
+│   │   ├── mensProduct.js<br>
+│   │   ├── payment.js<br>
+│   │   └── productDetails.js<br>
+│   │   └── signup.js<br>
+│   │<br>
+│   ├── styles/<br>
+│   │   ├── admin.css<br>
+│   │   ├── cart.css<br>
+│   │   ├── index.css<br>
+│   │   ├── mensProduct.css<br>
+│   │   ├── payment.css<br>
+│   │   └── productDetails.css<br>
+│   │   └── signup.css<br>
+│   │   └── thankyou.css<br>
+│   │<br>
+├── .gitIgnore<br>
+├── db.js<br>
+├── index.js<br>
+├── package-lock.json<br>
+├── package.json<br>
 └── README.md
 
 # Dependencies
