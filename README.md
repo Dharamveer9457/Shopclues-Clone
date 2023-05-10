@@ -1,11 +1,11 @@
 ===================PROJECT DETAILS==================
 
-Project Code : literate-needle-3714
-Project Website : Shopclues.com
-Cloned Name : ShopUnique.com
-Tech Stacks : HTML, CSS, JS, Express, Node, MongoDB Atlas
-Duration : 5 Days
-Responsive : Partial Responsive
+Project Code : literate-needle-3714<br>
+Project Website : Shopclues.com<br>
+Cloned Name : ShopUnique.com<br>
+Tech Stacks : HTML, CSS, JS, Express, Node, MongoDB Atlas<br>
+Duration : 5 Days<br>
+Responsive : Partial Responsive<br>
 
 ===================PROJECT BRIEFING==================
 
