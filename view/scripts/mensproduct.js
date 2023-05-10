@@ -178,7 +178,6 @@ function fetched(pageNumber){
 
       let sortC = document.querySelectorAll(".sort")
 
-      let selected6={}
 
       function sortAsc(el) {
         return fetchedData.slice().sort((a, b) => a.price - b.price);

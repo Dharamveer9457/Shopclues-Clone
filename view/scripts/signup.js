@@ -56,7 +56,6 @@ function signUP(){
   }else{
   fetch("http://localhost:4500/users/register",{
       method:"POST",
-      mode: 'no-cors',
       headers:{
           "Content-type":"application/json"
       },
