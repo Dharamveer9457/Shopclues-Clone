@@ -61,3 +61,29 @@ shop-unique/
 ├── package.json
 └── README.md
 
+# Dependencies
+
+The project uses the following dependencies:
+* bcrypt
+* cors
+* dotenv
+* express
+* jsonwebtoken
+* mongodb
+* mongoose
+* nodemmon
+
+# Deployment
+* Frontend is deployed on Netlify
+ FrontEnd : https://literate-needle-3714.netlify.app/ <br>
+
+ * Backend is deployed on Cyclic
+ Backend : https://jealous-ruby-snapper.cyclic.app/ <br>
+
+# Running the Website
+You can simply run a website by clicking on netlify link given above.<br>
+
+If there is any server side error while running you can simply run you frontend by netlify link and To run the server, use the npm run server. This will start the server and make the data accessible at http://localhost:4500.<br>
+
+
+
