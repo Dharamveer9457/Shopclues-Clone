@@ -97,7 +97,7 @@ buyBtn.addEventListener("click",()=>{
 
 function checkDuplicate(product){
     for(let i=0;i<CartArr.length;i++){
-      if(CartArr[i]._id===product.id){
+      if(CartArr[i].name===product.name){
         return true
       }
     }

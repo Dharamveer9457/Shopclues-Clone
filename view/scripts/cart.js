@@ -79,21 +79,23 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
         sum1+=Cart[i].strikePrice*Cart[i].quantity
       }
 
+      if(Number(totalamount.textContent)<500){
+        deliverycharge.textContent = 50
+        tip.textContent =""
+       }else if(Number(totalamount.textContent)<1000 && Number(totalamount.textContent)>500){
+        deliverycharge.textContent = 25
+        tip.textContent = ""
+       }else{
+        deliverycharge.textContent = 0
+        tip.textContent = "*(Delivery Free for order above ₹1000)"
+        tip.style.marginLeft = "10%"
+       }
+       
       saved.textContent = sum1
    totalamount.textContent=sum
    payableamount.textContent=Math.floor(Number(totalamount.textContent) + Number(deliverycharge.textContent))
     
-   if(Number(totalamount.textContent)<500){
-    deliverycharge.textContent = 50
-    tip.textContent =""
-   }else if(Number(totalamount.textContent)<1000 && Number(totalamount.textContent)>500){
-    deliverycharge.textContent = 25
-    tip.textContent = ""
-   }else{
-    deliverycharge.textContent = 0
-    tip.textContent = "*(Delivery Free for order above ₹1000)"
-    tip.style.marginLeft = "10%"
-   }
+   
 
    
     }
@@ -101,7 +103,7 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
 
     let placeorder = document.querySelector("#placeorder")
 
-    let name=document.querySelector("#name")
+    let username=document.querySelector("#name")
     let mobile=document.querySelector("#mobile")
     let house=document.querySelector("#house")
     let town=document.querySelector("#town")
@@ -113,7 +115,7 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
         
         event.preventDefault()
 
-        if(name.value=="" || mobile.value=="" || house.value==""|| town.value==""|| city.value==""|| landmark.value==""|| pin.value==""){
+        if(username.value=="" || mobile.value=="" || house.value==""|| town.value==""|| city.value==""|| landmark.value==""|| pin.value==""){
             alert("Please fill all details")
         }else{
             window.location.href = "payment.html"
