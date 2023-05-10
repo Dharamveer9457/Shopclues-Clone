@@ -44,13 +44,14 @@ submit.addEventListener("click",()=>{
 
 function signUP(){
   const payload = {
-      username : document.getElementById("username").value,
+      username : document.getElementById("usernameS").value,
       email : document.getElementById("emailS").value,
       password : document.getElementById("password").value,
       gender : document.getElementById("gender").value,
       age : document.getElementById("age").value,
       city : document.getElementById("city").value
   }
+
   if(username=="" || email=="" || password=="" || gender=="" || age=="" || city==""){
     alert("Fill all the details")
   }else{

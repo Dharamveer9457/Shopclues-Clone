@@ -21,10 +21,10 @@ pageArr.forEach(el=>{
 })
 
 function fetched(pageNumber){
-    fetch(`http://localhost:4500/page/${pageNumber}`)
+    fetch(`http://localhost:4500/products/page/${pageNumber}`)
         .then((res)=>res.json())
         .then(res=>{
-            // console.log(res.products)
+            console.log(res)
             fetchedData = res.products
             displayData(res.products)
             // console.log(fetchedData) 
@@ -78,10 +78,10 @@ function fetched(pageNumber){
           delete selected2[el.value]
         }
 
-        const filtered = fetchedData.filter(x=>{
+        const filtered2 = fetchedData.filter(x=>{
           return Object.keys(selected2).includes(x.category)
         })
-        displayData(filtered)
+        displayData(filtered2)
       })
     })
 
@@ -204,7 +204,7 @@ function fetched(pageNumber){
             return err
         })
   }
-    fetched()
+
 
     function displayData(data){
 
@@ -323,66 +323,8 @@ if(user!=""){
     })
 }
 
+//-----------------------------MENS CLOTH BUTTON-------------------------------------------
 
-// ---------------------------PAGINATION--------------------------------------
-
-// function displayPagination() {
-//   const paginationDiv = document.querySelector(".pagination");
-//   const totalPages = Math.ceil(totalResults / perPage);
-//   paginationDiv.innerHTML = "";
-//   for (let i = 1; i <= totalPages; i++) {
-//     const pageLink = document.createElement("a");
-//     pageLink.href = "#";
-//     pageLink.textContent = i;
-//     if (i === currentPage) {
-//       pageLink.classList.add("active");
-//     }
-//     pageLink.addEventListener("click", () => {
-//       currentPage = i;
-//       fetchData(currentPage);
-//     });
-//     paginationDiv.appendChild(pageLink);
-//   }
-// }
-// window.addEventListener("load",()=>{
-
-// })
-// async function fetchandRenderUsers(pageNumber=1){
-//   try{
-//     let res = await fetch(`http://localhost:4500/page/${pageNumber}`)
-//     let data = await res.json()
-//     let totalUsers = res.headers.get("X-Total-Count")
-//     console.log(totalUsers)
-//     showPagination(totalUsers)
-//     // renderCardList(data)
-//   }catch(err){
-//     console.log(err)
-//   }
-// }
-
-// let paginationWrappper = document.querySelector(".pagination")
-
-//   function showPagination(totalItems, limit){
-//           paginationWrappper.innerHTML = `
-//           ${getAbutton(1,1)}
-//           ${getAbutton(2,2)}
-//           ${getAbutton(3,3)}
-//           ${getAbutton(4,4)}
-//           ${getAbutton(5,5)}
-//           ${getAbutton(6,6)}
-//           ${getAbutton(7,7)}
-//           ${getAbutton(8,8)}
-//           ${getAbutton(9,9)}
-//           `
-//       let paginationButtons = document.querySelectorAll('.pagination-button')
-
-//       for(let btn of paginationButtons){
-//         btn.addEventListener("click",function(e){
-//           let pageNumber = e.target.dataset["pageNumber"]
-//           fetchandRenderProducts(pageNumber);
-//         })
-//       }
-//   }
-// function getAbutton(text,pageNumber){
-//   return ``
-// }
+function mensP(){
+  window.location.href = "mensProduct.html"
+}

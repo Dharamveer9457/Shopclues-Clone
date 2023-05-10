@@ -77,5 +77,9 @@ usericon.addEventListener("click",()=>{
     }
 })
 
+//-----------------------------MENS CLOTH BUTTON-------------------------------------------
 
+function mensP(){
+    window.location.href = "mensProduct.html"
+}
 

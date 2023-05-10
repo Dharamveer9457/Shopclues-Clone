@@ -7,12 +7,12 @@ const {auth} = require("./middlewares/auth")
 const cors = require("cors")
 require('dotenv').config()
 
-app.use(cors())
-app.use(express.json())
 
+app.use(express.json())
+app.use(cors())
 
 app.use("/users",userRouter)
-app.use(auth)
+// app.use(auth)
 
 app.use("/products",productRouter)
 

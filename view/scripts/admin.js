@@ -203,6 +203,7 @@ getButton.addEventListener("click",(e)=>{
       data.forEach(el=>{
         let getbox = document.createElement("div")
         let image = document.createElement("img")
+        let productID = document.createElement("h4")
         let name = document.createElement("h3")
         let price = document.createElement("p")
         let gender = document.createElement("p")
@@ -216,6 +217,7 @@ getButton.addEventListener("click",(e)=>{
       
 
         image.src = el.image
+        productID.textContent = `ID: ${el._id}`
         name.textContent = `${el.name}`
         price.textContent = `Price  : ${el.price}`
         gender.textContent = `Gender  : ${el.gender}`
@@ -238,7 +240,7 @@ getButton.addEventListener("click",(e)=>{
               }
         })
 
-        getbox.append(image,name,gender,price,strikePrice,category,brand,rating,color,discount,remove)
+        getbox.append(image,productID,name,gender,price,strikePrice,category,brand,rating,color,discount,remove)
         addBox.append(getbox)
 
       })
