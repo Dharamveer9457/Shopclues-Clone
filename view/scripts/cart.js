@@ -129,6 +129,7 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
     let formmobile = document.getElementById("mobile")
     let formcity = document.getElementById("city")
 
+    console.log(userid)
     window.addEventListener("load",()=>{
         fetched(userid)
     })
