@@ -144,7 +144,7 @@ addButton.addEventListener("click",(e)=>{
                discount : discountInput.value
             }
     
-            fetch("https://crowded-trunks-clam.cyclic.app/products/add",{
+            fetch("http://localhost:4500/products/add",{
                 method:"POST",
                 body: JSON.stringify(payload),
                 headers:{
@@ -183,7 +183,7 @@ getButton.addEventListener("click",(e)=>{
 
 
   function fetched(){
-    fetch("https://crowded-trunks-clam.cyclic.app/products/")
+    fetch("http://localhost:4500/products/")
         .then((res)=>res.json())
         .then(res=>{
             console.log(res.product)
@@ -247,7 +247,7 @@ getButton.addEventListener("click",(e)=>{
 })
 
 function deleteProduct(id){
-  fetch(`https://crowded-trunks-clam.cyclic.app/products/delete/${id}`,{
+  fetch(`http://localhost:4500/products/delete/${id}`,{
                 method:"DELETE",
             })
             .then((res)=>res.json())
@@ -361,7 +361,7 @@ updateBtn.addEventListener("click",(e)=>{
             e.preventDefault()
               let id = ProductID.value
             function fetched(id){
-              fetch(`https://crowded-trunks-clam.cyclic.app/products/${id}`)
+              fetch(`http://localhost:4500/products/${id}`)
                   .then((res)=>res.json())
               .then(res=>{
                   console.log(res.product)
@@ -412,7 +412,7 @@ updateBtn.addEventListener("click",(e)=>{
             }
 
             function updateFetch(id){
-              fetch(`https://crowded-trunks-clam.cyclic.app/products/update/${id}`,{
+              fetch(`http://localhost:4500/products/update/${id}`,{
                 method : "PATCH",
                 body : JSON.stringify(updatedUser),
                 headers : {
@@ -473,7 +473,7 @@ userlist.addEventListener("click",(e)=>{
       table.appendChild(header);
 
 
-        fetch('https://crowded-trunks-clam.cyclic.app/users/')
+        fetch('http://localhost:4500/users/')
         .then(res => res.json())
         .then(data => {
           console.log(data.user)
@@ -538,7 +538,7 @@ userlist.addEventListener("click",(e)=>{
       }
 })
 
-fetch('https://crowded-trunks-clam.cyclic.app/products/')
+fetch('http://localhost:4500/products/')
         .then(res => res.json())
         .then(data => {
           console.log(data.product.length)   
@@ -550,7 +550,7 @@ fetch('https://crowded-trunks-clam.cyclic.app/products/')
         })
 
 
-fetch('https://crowded-trunks-clam.cyclic.app/users/')
+fetch('http://localhost:4500/users/')
         .then(res => res.json())
         .then(data => {
           console.log(data.user)

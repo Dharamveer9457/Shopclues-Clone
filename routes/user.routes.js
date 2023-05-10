@@ -66,16 +66,16 @@ userRouter.get("/", async(req,res)=>{
     }
 })
 
-//Get User by ID
+// //Get User by ID
 
-userRouter.get("/:id", async(req,res)=>{
-    try {
-        const user = await userModel.findById(req.params.id)
-        res.status(200).send({user})
-    } catch (error) {
-        res.status(500).json({"msg":"Error while getting user from an ID","err":error.message})
-    }
-})
+// userRouter.get("/:id", async(req,res)=>{
+//     try {
+//         const user = await userModel.findById(req.params.id)
+//         res.status(200).send({user})
+//     } catch (error) {
+//         res.status(500).json({"msg":"Error while getting user from an ID","err":error.message})
+//     }
+// })
 
 
 module.exports = {
