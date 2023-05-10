@@ -14,13 +14,13 @@ Shop Unique is a web application that is designed to mimic the functionality of 
 
 # Folder Structure
 
-shop-unique/
-├── middlewares/
-│   ├── auth.js
+shop-unique/<br>
+├── middlewares/<br>
+│   ├── auth.js<br>
 │   │
-├── models/
-│   ├── product.model.js
-│   ├── user.model.js
+├── models/<br>
+│   ├── product.model.js<br>
+│   ├── user.model.js<br>
 │   │
 ├── routes/
 │   ├── product.route.js
