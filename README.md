@@ -88,7 +88,7 @@ If there is any server side error while running you can simply run frontend by n
 # Some snaps of Website
 
 * Home Page<br>
-![My Image](https://ibb.co/GJr9743)
+![My Image]([url=https://ibb.co/GJr9743][img]https://i.ibb.co/9vdhnk3/homepage-Ss.png[/img][/url])
 
 * Login/SignUp Page<br>
 ![My Image](./view/images/login_SS.png)
