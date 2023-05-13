@@ -87,17 +87,17 @@ If there is any server side error while running you can simply run frontend by n
 
 # Some snaps of Website
 
-* Home Page
-![Home Page](./view/images/homepage_Ss.png)
+* Home Page<br>
+![Home Page](view/images/homepage_Ss.png)
 
-* Login/SignUp Page
-![Login Page](./view/images/login_SS.png)
+* Login/SignUp Page<br>
+![Login Page](view/images/login_SS.png)
 
-* Product Page
-![Product Page](./view/images/product_SS.png)
+* Product Page<br>
+![Product Page](view/images/product_SS.png)
 
-* Admin Panel
-![Admin Page](./view/images/admin_SS.png)
+* Admin Panel<br>
+![Admin Page](view/images/admin_SS.png)
 
 
 
