@@ -83,7 +83,21 @@ The project uses the following dependencies:
 # Running the Website
 You can simply run a website by clicking on netlify link given above.<br>
 
-If there is any server side error while running you can simply run you frontend by netlify link and To run the server, use the npm run server. This will start the server and make the data accessible at http://localhost:4500.<br>
+If there is any server side error while running you can simply run frontend by netlify link and To run the server, use the npm run server. This will start the server and make the data accessible at http://localhost:4500.<br>
+
+# Some snaps of Website
+
+* Home Page
+![Alt text](./view/images/homepage_Ss.png)
+
+* Login/SignUp Page
+![Alt text](./view/images/login_SS.png)
+
+* Product Page
+![Alt text](./view/images/product_SS.png)
+
+* Admin Panel
+![Alt text](./view/images/admin_SS.png)
 
 
 
