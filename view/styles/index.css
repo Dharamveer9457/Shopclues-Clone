@@ -4,12 +4,15 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
-
 /* ------------------------------------NAVBAR-------------------------------- */
+
+
+/* ------------------------------------NAVBAR--------------------------------*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     background-color: hsl(0, 0%, 100%);
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -65,7 +68,7 @@ nav {
   
   .nav-right a:hover {
     color: #666;
-  }
+  } 
 
   /* ------------------------------------Sign Out button-------------------------------- */
 
@@ -239,8 +242,7 @@ nav {
 
  #slideshow>img{
   width: 100%;
-  
- }
+  }
 
  #links{
   display: flex;
@@ -482,3 +484,375 @@ nav {
   padding-bottom:2px;
 }
 
+
+/*-----------------------------------------RESPNOSIVENESS-----------------------------------------*/
+
+@media only screen and (max-width: 1501px){
+  #budget{
+    display: none;
+  }
+
+  #logo{
+    width: 35%;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
+
+  .nav-right a{
+    margin-left:0px;
+  }
+
+  /* .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+    display: none;
+  } */
+  /* .nav-right{
+    width: 45%;
+  }
+
+  .nav-right a{
+    margin-left: 15px;
+  } */
+
+  .signout{
+    margin-left: 60%;
+  }
+
+  .nav-left{
+    width: 60%;
+  }
+
+  .search-bar{
+    display: none;
+  }
+
+  #innernav{
+    width: 100%;
+    margin: auto;
+  }
+
+  #twobox{
+    margin-top: 120px;
+  }
+
+}
+@media only screen and (max-width: 900px) and (min-width: 601px){
+  nav {
+    padding: 10px;
+  }
+
+#logo{
+  width: 35%;
+}
+
+.nav-left {
+  display: flex;
+  width: 55%;
+}
+
+/* .nav-right{
+  width: 45%;
+ margin-right: 15px;
+} */
+
+.nav-right {
+  width: 30%;
+  padding-left: 5px;
+}
+
+.nav-right a{
+  margin-left: 0px;
+}
+
+/* .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+  display: none;
+} */
+
+#budget{
+  display: none;
+}
+
+#twobox{
+  margin-top: 120px;
+}
+
+/* .nav-right a{
+  margin-left: 10px;
+} */
+
+.signout{
+  margin-left: 60%;
+}
+
+.search-bar{
+  display: none;
+}
+
+#innernav{
+  width: 100%;
+  margin: auto;
+}
+
+}
+
+
+@media only screen and (min-width:301px) and (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+
+  #logo{
+    width: 50%;
+    
+  }
+
+  .search-bar {
+    width: 40%;
+    display: none;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 70%;
+    font-size: 12px;
+  }
+  
+  .search-bar button[type="submit"] {
+    width: 30%;
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .nav-left{
+    width: 70%;
+    }
+  
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
+
+  .nav-right a{
+    margin-left: 0px;
+  }
+
+  .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+    display: none;
+  }
+
+  .navbar{
+    margin-top: 20px;
+  }
+
+  #innernav{
+    width: 90%;
+    margin: auto;
+  }
+
+  #budget{
+    display: none;
+  }
+
+  #logo{
+      width: 50%;
+  }
+
+  .signout{
+    margin-left: 40%;
+  }
+
+  #twobox{
+    width: 120%;
+    margin-left: 25px;
+    margin-top: 140px;
+  }
+
+  #parent{
+    width: 85%;
+  }
+
+  #deals{
+    width: 125%;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  #deals>div{
+    line-height: 15px;
+  }
+
+  #daily{
+    width: 125%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 15px;
+    padding-right: 5px;
+  }
+
+  #deals img{
+    width: 200%;
+  }
+
+  #daily img{
+    width: 100px;
+    height: 10%;
+  }
+
+  #budget1{
+    width: 120%;
+    margin-left: 25px;
+  }
+
+  #band{
+    width: 130%;
+  }
+
+  #footer{
+    width: 134%;
+    margin: auto;
+  }
+
+  #social{
+    width: 134%;
+  }
+
+  #lastline{
+    width: 134%;
+  }
+}
+
+@media only screen and (max-width: 300px){
+  nav {
+    padding: 10px;
+  }
+
+  #logo{
+    width: 40%;
+  }
+
+  .search-bar {
+    width: 40%;
+    display: none;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 70%;
+    font-size: 12px;
+  }
+  
+  .search-bar button[type="submit"] {
+    width: 30%;
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .nav-left{
+    width: 70%;
+  }
+  
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
+
+  .nav-right a{
+    margin-left: 0px;
+  }
+
+  .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+    display: none;
+  }
+
+  .navbar{
+    margin-top: 20px;
+  }
+
+  #innernav{
+    width: 90%;
+    margin: auto;
+  }
+
+  #budget{
+    display: none;
+  }
+
+  #logo{
+      width: 50%;
+  }
+
+  .signout{
+    margin-left: 40%;
+  }
+
+  #twobox{
+    width: 150%;
+    margin-left: 25px;
+    margin-top: 140px;
+  }
+
+  #parent{
+    width: 85%;
+  }
+
+  #deals{
+    width: 150%;
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  #deals>div{
+    line-height: 15px;
+  }
+
+  #daily{
+    width: 150%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 15px;
+  }
+
+  #deals img{
+    width: 200%;
+  }
+
+  #daily img{
+    width: 90px;
+    height: 10%;
+  }
+
+  #budget1{
+    width: 150%;
+    margin-left: 25px;
+  }
+
+  #band{
+    width: 150%;
+  }
+
+  #footer{
+    width: 160%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  #social{
+    width: 160%;
+  }
+
+  #lastline{
+    width: 160%;
+  }
+}

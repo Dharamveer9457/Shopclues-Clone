@@ -49,6 +49,7 @@ if(user!=""){
         localStorage.clear("user")
         localStorage.clear("token")
         location.reload()
+        window.location.href = "index.html"
     })
 }
 

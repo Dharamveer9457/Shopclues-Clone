@@ -15,6 +15,7 @@ nav {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
+    width: 100%;
   }
   
   #logo{
@@ -351,7 +352,7 @@ nav {
   }
 
   #addtocart>button:nth-child(1){
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border: 2px solid #ff884f;
     border-radius: 2px;
     color: orange;
@@ -437,3 +438,431 @@ nav {
 }
 
 
+/*-------------------------------------Responsive-----------------------------------*/
+
+@media only screen and (max-width: 1280px){
+   
+  #logo{
+    width: 55%;
+  }
+
+  nav {
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .navbar{
+    margin-top: 40px;
+  }
+
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
+
+  .nav-right a{
+    margin-left:10px;
+  }
+
+  /* .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+    display: none;
+  } */
+  /* .nav-right{
+    width: 45%;
+  }
+
+  .nav-right a{
+    margin-left: 15px;
+  } */
+
+  .signout{
+    margin-left: 25px;
+  }
+
+  .nav-left{
+    width: 60%;
+  }
+
+  #locate{
+    margin-top: 140px;
+    margin-bottom: 20px;
+  }
+  
+  #main{
+    display: flex;
+    width: 155%;
+  }
+
+  #left{
+    width: 20%;
+  }
+  
+  #right{
+    width: 78.5%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5px;
+  }
+
+  #right>div{
+    line-height: 20px;
+  }
+
+  .pagination{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 50%;
+  }
+
+  #footer{
+    width: 155%;
+  }
+
+  #social{
+    width: 155%;
+  }
+
+  #lastline{
+    width: 155%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px){
+  nav {
+    padding: 10px;
+  }
+
+#logo{
+  width: 35%;
+}
+
+.nav-left {
+  display: flex;
+  width: 55%;
+}
+
+/* .nav-right{
+  width: 45%;
+ margin-right: 15px;
+} */
+
+.nav-right {
+  width: 30%;
+  padding-left: 5px;
+}
+
+.nav-right a{
+  margin-left: 10px;
+}
+
+/* .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+  display: none;
+} */
+
+
+/* .nav-right a{
+  margin-left: 10px;
+} */
+
+.signout{
+  margin-left: 2%;
+}
+
+#locate{
+  margin-top: 140px;
+  margin-bottom: 20px;
+}
+
+#main{
+  display: flex;
+  width: 145%;
+  margin-left: 5%;
+}
+
+#images{
+  width: 40%;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+#big_img{
+  width: 98%;
+}
+
+#big_img>img{
+  width: 98%;
+}
+
+#small_img{
+  margin-right: 45%;
+  margin-left: 12%;
+  margin-top: 10px;
+}
+
+#small_img>img{
+  width: 40%;
+}
+
+#footer{
+  width: 155%;
+  margin-top: 67.5%;
+}
+
+#social{
+  width: 155%;
+}
+
+#lastline{
+  width: 155%;
+}
+
+}
+
+@media only screen and (min-width:301px) and (max-width: 600px) {
+  nav {
+    padding: 10px;
+  }
+
+  #logo{
+    width: 65%;
+    
+  }
+
+  .nav-left{
+    width: 70%;
+    }
+  
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
+
+  .nav-right a{
+    margin-left: 0px;
+  }
+
+  .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+    display: none;
+  }
+  
+  .navbar{
+    margin-top: 10px;
+  }
+
+  .search-bar {
+   display: none;
+  }
+
+  #logo{
+      width: 40%;
+  }
+
+  .signout{
+    margin-left: 40%;
+  }
+
+  #innernav{
+    width: 90%;
+    margin: auto;
+  }
+
+  #locate{
+    margin-top: 130px;
+    width: 200%;
+  }
+  
+  #main{
+    display: flex;
+    width: 200%;
+    display: flex;
+    margin-left: 8%;
+  }
+
+  #images{
+    width: 30%;
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  #big_img{
+    width: 98%;
+  }
+
+  #big_img>img{
+    width: 98%;
+  }
+
+  #small_img{
+    margin-right: 45%;
+    margin-left: 12%;
+  }
+
+  #small_img>img{
+    width: 40%;
+  }
+
+  #Pdetails{
+    width: 60%;
+    font-size: small;
+  }
+
+  #addtocart{
+    width: 95%;
+  }
+
+  #addtocart>button:nth-child(1){
+    font-size: 15px;
+    border-radius: 5px;
+    margin:0px 5px 0px 5px;
+  }
+
+  #addtocart>button:nth-child(2){
+    font-size: 15px;
+    border-radius: 5px;
+    margin:0px 5px 0px 5px;
+  }
+
+  .feature p{
+    font-size: 12px;
+  }
+
+  #rev{
+    display: none;
+  }
+
+  #footer{
+    width: 211%;
+    margin-top: 50%;
+  }
+  
+
+  #social{
+    width: 211%;
+  }
+
+  #lastline{
+    width: 211%;
+  }
+}
+
+@media only screen and (max-width: 300px){
+  nav {
+    padding: 10px;
+  }
+
+  #logo{
+    width:40%;
+  }
+
+  .nav-left{
+    width: 70%;
+  }
+  
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
+
+  .nav-right a{
+    margin-left: 0px;
+  }
+
+  .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+    display: none;
+  }
+
+  .navbar{
+    margin-top: 20px;
+  }
+ 
+  #logo{
+      width: 50%;
+  }
+
+  .signout{
+    margin-left: 40%;
+  }
+
+  #innernav{
+    width: 90%;
+    margin: auto;
+  }
+
+  #locate{
+    margin-top: 130px;
+    width: 200%;
+  }
+  
+  #main{
+    display: flex;
+    width: 200%;
+    display: flex;
+    margin-left: 8%;
+  }
+
+  #images{
+    width: 30%;
+    padding-right: 12px;
+  }
+
+  #big_img{
+    width: 98%;
+  }
+
+  #big_img>img{
+    width: 98%;
+  }
+
+  #small_img{
+    margin-right: 45%;
+  }
+
+  #small_img>img{
+    width: 40%;
+  }
+
+  #Pdetails{
+    width: 60%;
+    font-size: small;
+  }
+
+  #addtocart{
+    width: 95%;
+  }
+
+  #addtocart>button:nth-child(1){
+    font-size: 15px;
+    border-radius: 5px;
+    margin:0px 5px 0px 5px;
+  }
+
+  #addtocart>button:nth-child(2){
+    font-size: 15px;
+    border-radius: 5px;
+    margin:0px 5px 0px 5px;
+  }
+
+  .feature p{
+    font-size: 8px;
+  }
+
+  #rev{
+    display: none;
+  }
+
+  #footer{
+    width: 200%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  #social{
+    width: 200%;
+  }
+
+  #lastline{
+    width: 200%;
+  }
+}

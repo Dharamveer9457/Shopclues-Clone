@@ -115,7 +115,11 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
         
         event.preventDefault()
 
-        if(username.value=="" || mobile.value=="" || house.value==""|| town.value==""|| city.value==""|| landmark.value==""|| pin.value==""){
+        if(Cart.length<1){
+          alert("Please add some items in Cart")
+          window.location.href = "mensProduct.html"
+        }
+        else if(username.value=="" || mobile.value=="" || house.value==""|| town.value==""|| city.value==""|| landmark.value==""|| pin.value==""){
             alert("Please fill all details")
         }else{
             window.location.href = "payment.html"
@@ -208,7 +212,9 @@ if(user!=""){
     signout.addEventListener("click",()=>{
         localStorage.clear("user")
         localStorage.clear("token")
+        localStorage.clear("cart")
         location.reload()
+        window.location.href = "index.html"
     })
 }
 

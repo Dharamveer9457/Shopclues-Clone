@@ -411,36 +411,293 @@ nav {
    }
 
 
-   /*----------------------------RESPONSIVENESS---------------------------*/
+  /*-------------------------------------Responsive-----------------------------------*/
 
-   @media (max-width: 768px) {
-    #cartitem{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
+@media only screen and (max-width: 1280px){
+   
+  #logo{
+    width: 55%;
+  }
 
-    #cartcontainer{
-        display: flex;
-        flex-direction: column;
-    }
+  nav {
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .navbar{
+    margin-top: 40px;
+  }
 
-    #carttotal{
-        width: 100%;
-    }
-   }
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
 
-   @media (max-width: 480px){
-    #cartitem{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
+  .nav-right a{
+    margin-left:10px;
+  }
 
-    #cartcontainer{
-        display: flex;
-        flex-direction: column;
-    }
+  /* .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+    display: none;
+  } */
+  /* .nav-right{
+    width: 45%;
+  }
 
-    #carttotal{
-        width: 100%;
-    }
-   }
+  .nav-right a{
+    margin-left: 15px;
+  } */
+
+  .signout{
+    margin-left: 25px;
+  }
+
+  .nav-left{
+    width: 60%;
+  }
+
+  #cartcontainer{
+    width: 150%;
+    margin-left: 20px;
+  }
+
+  #cartitem{
+    width:70%
+  }
+  
+  #carttotal{
+    width:40%
+  }
+
+  #footer{
+    width: 156%;
+  }
+
+  #social{
+    width: 156%;
+  }
+
+  #lastline{
+    width: 156%;
+  }
+
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px){
+  nav {
+    padding: 10px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+#logo{
+  width: 35%;
+}
+
+.nav-left {
+  display: flex;
+  width: 55%;
+}
+
+/* .nav-right{
+  width: 45%;
+ margin-right: 15px;
+} */
+
+.nav-right {
+  width: 30%;
+  padding-left: 5px;
+}
+
+.nav-right a{
+  margin-left: 10px;
+}
+
+/* .nav-right>a:nth-child(2),.nav-right>a:nth-child(3) {
+  display: none;
+} */
+
+
+/* .nav-right a{
+  margin-left: 10px;
+} */
+
+.signout{
+  margin-left: 2%;
+}
+
+#cartcontainer{
+  width: 150%;
+}
+
+#cartitem{
+  display: grid;
+  width: 60%;
+  grid-template-columns: repeat(2,1fr);
+  margin-left: 15px;
+}
+
+#carttotal{
+  width: 45%;
+}
+
+#footer{
+  width: 155%;
+}
+
+#social{
+  width: 155%;
+}
+
+#lastline{
+  width: 155%;
+}
+
+}
+
+@media only screen and (min-width:301px) and (max-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #logo{
+    width:40%;
+  }
+
+  .nav-left{
+    width: 70%;
+  }
+  
+  .nav-right {
+    width: 30%;
+    padding-left: 10px;
+  }
+
+  .nav-right a{
+    margin-left: 25px;
+  }
+
+  /* .nav-right>a:nth-child(1),.nav-right>a:nth-child(2) {
+    display: none;
+  } */
+
+  .navbar{
+    margin-top: 30px;
+  }
+ 
+  #logo{
+      width: 50%;
+  }
+
+  .signout{
+    margin-left: 50%;
+  }
+
+  #innernav{
+    width: 90%;
+    margin: auto;
+  }
+  
+  #cartcontainer{
+    width: 250%;
+  }
+
+  #cartitem{
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 15px;
+  }
+
+  #carttotal{
+    width: 70%;
+  }
+
+  #footer{
+    width: 257%;
+  }
+
+  #social{
+    width: 257%;
+  }
+
+  #lastline{
+    width: 257%;
+  }
+}
+
+@media only screen and (max-width: 300px){
+  nav {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #logo{
+    width:40%;
+  }
+
+  .nav-left{
+    width: 70%;
+  }
+  
+  .nav-right {
+    width: 30%;
+    padding-left: 5px;
+  }
+
+  .nav-right a{
+    margin-left: 10px;
+  }
+
+  /* .nav-right>a:nth-child(1),.nav-right>a:nth-child(2) {
+    display: none;
+  } */
+
+  .navbar{
+    margin-top: 25px;
+  }
+ 
+  #logo{
+      width: 50%;
+  }
+
+  .signout{
+    margin-left: 50%;
+  }
+
+  #innernav{
+    width: 90%;
+    margin: auto;
+  }
+  
+  #cartcontainer{
+    width: 350%;
+  }
+
+  #cartitem{
+    display: grid;
+    width: 40%;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 15px;
+  }
+
+  #carttotal{
+    width: 55%;
+  }
+
+  #footer{
+    width: 350%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  #social{
+    width: 350%;
+  }
+
+  #lastline{
+    width: 350%;
+  }
+}

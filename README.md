@@ -5,7 +5,7 @@ Project Website : Shopclues.com<br>
 Cloned Name : ShopUnique.com<br>
 Tech Stacks : HTML, CSS, JS, Express, Node, MongoDB Atlas<br>
 Duration : 5 Days<br>
-Responsive : Partial Responsive<br>
+Responsive : Fully Responsive<br>
 
 ===================PROJECT BRIEFING==================
 
