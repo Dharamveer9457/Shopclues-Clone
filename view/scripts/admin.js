@@ -144,7 +144,7 @@ addButton.addEventListener("click",(e)=>{
                discount : discountInput.value
             }
     
-            fetch("http://localhost:4500/products/add",{
+            fetch("https://stormy-flannel-shirt-ox.cyclic.app/products/add",{
                 method:"POST",
                 body: JSON.stringify(payload),
                 headers:{
@@ -183,7 +183,7 @@ getButton.addEventListener("click",(e)=>{
 
 
   function fetched(){
-    fetch("http://localhost:4500/products/")
+    fetch("https://stormy-flannel-shirt-ox.cyclic.app/products/")
         .then((res)=>res.json())
         .then(res=>{
             console.log(res.product)
@@ -249,7 +249,7 @@ getButton.addEventListener("click",(e)=>{
 })
 
 function deleteProduct(id){
-  fetch(`http://localhost:4500/products/delete/${id}`,{
+  fetch(`https://stormy-flannel-shirt-ox.cyclic.app/products/delete/${id}`,{
                 method:"DELETE",
             })
             .then((res)=>res.json())
@@ -363,7 +363,7 @@ updateBtn.addEventListener("click",(e)=>{
             e.preventDefault()
               let id = ProductID.value
             function fetched(id){
-              fetch(`http://localhost:4500/products/${id}`)
+              fetch(`https://stormy-flannel-shirt-ox.cyclic.app/products/${id}`)
                   .then((res)=>res.json())
               .then(res=>{
                   console.log(res.product)
@@ -414,7 +414,7 @@ updateBtn.addEventListener("click",(e)=>{
             }
 
             function updateFetch(id){
-              fetch(`http://localhost:4500/products/update/${id}`,{
+              fetch(`https://stormy-flannel-shirt-ox.cyclic.app/products/update/${id}`,{
                 method : "PATCH",
                 body : JSON.stringify(updatedUser),
                 headers : {
@@ -475,7 +475,7 @@ userlist.addEventListener("click",(e)=>{
       table.appendChild(header);
 
 
-        fetch('http://localhost:4500/users/')
+        fetch('https://stormy-flannel-shirt-ox.cyclic.app/users/')
         .then(res => res.json())
         .then(data => {
           console.log(data.user)
@@ -540,7 +540,7 @@ userlist.addEventListener("click",(e)=>{
       }
 })
 
-fetch('http://localhost:4500/products/')
+fetch('https://stormy-flannel-shirt-ox.cyclic.app/products/')
         .then(res => res.json())
         .then(data => {
           console.log(data.product.length)   
@@ -552,7 +552,7 @@ fetch('http://localhost:4500/products/')
         })
 
 
-fetch('http://localhost:4500/users/')
+fetch('https://stormy-flannel-shirt-ox.cyclic.app/users/')
         .then(res => res.json())
         .then(data => {
           console.log(data.user)

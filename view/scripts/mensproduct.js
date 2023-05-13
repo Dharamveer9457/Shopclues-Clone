@@ -21,7 +21,7 @@ pageArr.forEach(el=>{
 })
 
 function fetched(pageNumber){
-    fetch(`http://localhost:4500/products/page/${pageNumber}`)
+    fetch(`https://stormy-flannel-shirt-ox.cyclic.app/products/page/${pageNumber}`)
         .then((res)=>res.json())
         .then(res=>{
             console.log(res)

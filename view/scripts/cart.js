@@ -138,7 +138,7 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
         fetched(userid)
     })
     function fetched(id){
-        fetch(`http://localhost:4500/users/${id}`)
+        fetch(`https://stormy-flannel-shirt-ox.cyclic.app/users/${id}`)
             .then((res)=>res.json())
         .then(res=>{
             console.log(res.user)

@@ -78,7 +78,7 @@ The project uses the following dependencies:
  FrontEnd : https://literate-needle-3714.netlify.app/ <br>
 
  * Backend is deployed on Cyclic<br>
- Backend : https://jealous-ruby-snapper.cyclic.app/ <br>
+ Backend : https://stormy-flannel-shirt-ox.cyclic.app/ <br>
 
 # Running the Website
 You can simply run a website by clicking on netlify link given above.<br>
