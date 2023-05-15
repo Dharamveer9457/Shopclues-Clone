@@ -94,9 +94,9 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
       saved.textContent = sum1
    totalamount.textContent=sum
    payableamount.textContent=Math.floor(Number(totalamount.textContent) + Number(deliverycharge.textContent))
-    
-   
 
+   const totalOfCart = Math.floor(Number(totalamount.textContent) + Number(deliverycharge.textContent))
+   localStorage.setItem("total",(totalOfCart))
    
     }
     ecommerceData()
@@ -124,6 +124,7 @@ let Cart = JSON.parse(localStorage.getItem("cart"))||[];
         }else{
             window.location.href = "payment.html"
         }
+
     })
 
 // -----------------------------------FORM FILL------------------------------------------

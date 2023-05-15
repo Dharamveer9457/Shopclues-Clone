@@ -87,7 +87,7 @@ nav {
   }
 
   /* ------------------------------------Mega Menu-------------------------------- */
-
+/* 
   .navbar{
     width: 100%;
     background-color: #24a3b5;
@@ -219,7 +219,7 @@ nav {
  }
  #ad>div:nth-child(2)>img{
     margin-left: 7%;
- }
+ } */
   
 
   /* ------------------------------------MAIN------------------------------- */
@@ -229,6 +229,7 @@ nav {
     margin: auto;
     border: 2px solid rgb(196, 196, 196);
     padding-top: 15px;
+    margin-top: 10px
   }
 
   form>input{
@@ -388,7 +389,8 @@ nav {
   nav {
     padding: 10px;
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
+    margin: 0;
   }
 
 #logo{

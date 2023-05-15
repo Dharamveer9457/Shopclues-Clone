@@ -129,6 +129,11 @@ var otp;
 
     })
 
+
+    let total = localStorage.getItem("total")||""
+    
+    const totalTopay = document.getElementById("totalAmount")
+    totalTopay.textContent = `₹ ${total}`
     
 
    
