@@ -88,15 +88,19 @@ If there is any server side error while running you can simply run frontend by n
 # Some snaps of Website
 
 * Home Page<br>
+
 ![homepagess](https://github.com/Dharamveer9457/literate-needle-3714/assets/115460337/e691adb4-ee33-4a0e-9445-ce2cbfde18d8)
 
 * Login/SignUp Page<br>
+
 ![loginss](https://github.com/Dharamveer9457/literate-needle-3714/assets/115460337/54a50976-b6d1-4f4b-b3d6-d9745efd350e)
 
 * Product Page<br>
+
 ![productss](https://github.com/Dharamveer9457/literate-needle-3714/assets/115460337/451eae02-3d83-4e8c-a6e3-3a47754f4d24)
 
 * Admin Panel<br>
+
 ![adminss](https://github.com/Dharamveer9457/literate-needle-3714/assets/115460337/2e8c6e07-b9aa-4a44-b1a4-d62bf7822f3c)
 
 
