@@ -104,7 +104,7 @@ function signIN(){
     .then(res=>{
     console.log(res)
 
-    if(res.msg == 'Wrong Credentials'){
+    if(res.msg == 'Wrong Credentials' || res.err == "Cannot read properties of undefined (reading 'username')" ){
       alert("Wrong Credentials")
     }else{
       localStorage.setItem("token",res.token)
