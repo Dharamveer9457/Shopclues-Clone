@@ -88,16 +88,16 @@ If there is any server side error while running you can simply run frontend by n
 # Some snaps of Website
 
 * Home Page<br>
-![My Image]("view/images/homepage_Ss.png")
+![Alt Text](./view/images/homepagess.png)
 
 * Login/SignUp Page<br>
-![My Image](view/images/login_SS.png)
+![Alt Text](./view/images/loginss.png)
 
 * Product Page<br>
-![My Image](view/images/product_SS.png)
+![Alt Text](./view/images/productss.png)
 
 * Admin Panel<br>
-![My Image](view/images/admin_SS.png)
+![Alt Text](./view/images/adminss.png)
 
 
 
