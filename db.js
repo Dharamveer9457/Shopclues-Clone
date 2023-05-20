@@ -8,5 +8,3 @@ const connection = mongoose.connect(process.env.mongoURL)
 module.exports = {
     connection
 }
-
-let x = mangos
