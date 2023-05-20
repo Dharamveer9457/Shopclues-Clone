@@ -9,4 +9,4 @@ module.exports = {
     connection
 }
 
-let x = mango
+let x = mangos
