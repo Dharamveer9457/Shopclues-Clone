@@ -2,7 +2,7 @@ const express = require("express")
 const {productModel} = require("../models/product.model")
 const productRouter = express.Router()
 
-let abc = 1234
+let abc = 123
 
 //get routes for all the articles
 productRouter.get("/", async(req,res)=>{
