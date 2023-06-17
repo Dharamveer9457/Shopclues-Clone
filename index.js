@@ -7,7 +7,7 @@ const {auth} = require("./middlewares/auth")
 const cors = require("cors")
 require('dotenv').config()
 
-let abc = 123
+let abc = 12
 
 app.use(express.json())
 app.use(cors())
