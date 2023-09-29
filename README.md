@@ -75,7 +75,7 @@ The project uses the following dependencies:
 
 # Deployment
 * Frontend is deployed on Netlify<br>
- FrontEnd : https://literate-needle-3714.netlify.app/ <br>
+ FrontEnd : https://shopunique.netlify.app/ <br>
 
  * Backend is deployed on Cyclic<br>
  Backend : https://stormy-flannel-shirt-ox.cyclic.app/ <br>
